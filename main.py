@@ -15,6 +15,14 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
+BANNER = """
+  +--------------------------------------+
+  |   Vemmba - AI Shorts Generator       |
+  +--------------------------------------+
+"""
+print(BANNER)
+
+
 from shorts_generator import generate_shorts
 
 
